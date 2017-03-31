@@ -15,4 +15,4 @@ cd /data/golr-loader && mvn exec:java -Dexec.mainClass="org.monarch.golr.SimpleL
 /data/solr-6.2.1/bin/post -c search /data/golr-loader/output.json
 /data/solr-6.2.1/bin/solr stop
 cd /data/solr-6.2.1/server/solr && tar cfv search.tar search/
-cp /data/solr-6.2.1/server/solr/search.tgz /solr
+cp /data/solr-6.2.1/server/solr/search.tar /solr
