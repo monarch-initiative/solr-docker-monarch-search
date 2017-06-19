@@ -39,7 +39,7 @@ ADD files/run.sh /data/
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 RUN git clone https://github.com/SciGraph/SciGraph.git /data/scigraph
-RUN git clone https://github.com/SciGraph/golr-loader.git /data/golr-loader
+RUN git clone -b solr-socket-fix https://github.com/SciGraph/golr-loader.git /data/golr-loader
 RUN git clone https://github.com/monarch-initiative/monarch-app.git /data/monarch-app
 RUN git clone https://github.com/berkeleybop/golr-schema /data/golr-schema
 
