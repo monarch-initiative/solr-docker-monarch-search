@@ -46,7 +46,7 @@ RUN git clone -b stopwords-test https://github.com/monarch-initiative/golr-schem
 
 RUN cd /data/scigraph && mvn install -DskipTests -DskipITs
 RUN cd /data/golr-loader && mvn install -Dmaven.test.skip
-RUN cd /data/golr-schema && git checkout 1387-search-awesome && mvn install #TODO remove branch when golr-manager is updated
+RUN cd /data/golr-schema && mvn install #TODO remove branch when golr-manager is updated
 
 RUN wget http://archive.apache.org/dist/lucene/solr/6.2.1/solr-6.2.1.tgz -P /data/
 RUN cd /data && tar xzfv /data/solr-6.2.1.tgz
