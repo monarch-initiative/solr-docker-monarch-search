@@ -34,6 +34,7 @@ RUN apt-get -y update && apt-get install -y git
 WORKDIR /data
 ADD files/functions.inc /data/
 ADD files/run.sh /data/
+ADD files/stopwords.txt /data/
 
 # Define commonly used JAVA_HOME variable
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
