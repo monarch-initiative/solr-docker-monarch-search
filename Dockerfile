@@ -41,11 +41,11 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 RUN git clone https://github.com/SciGraph/SciGraph.git /data/scigraph
 RUN git clone https://github.com/SciGraph/golr-loader.git /data/golr-loader
 RUN git clone https://github.com/monarch-initiative/monarch-app.git /data/monarch-app
-RUN git clone https://github.com/berkeleybop/golr-schema /data/golr-schema
+RUN git clone https://github.com/monarch-initiative/golr-schema /data/golr-schema
 
 RUN cd /data/scigraph && mvn install -DskipTests -DskipITs
 RUN cd /data/golr-loader && mvn install -Dmaven.test.skip
-RUN cd /data/golr-schema && git checkout 1387-search-awesome && mvn install #TODO remove branch when golr-manager is updated
+RUN cd /data/golr-schema && mvn install
 
 RUN wget http://archive.apache.org/dist/lucene/solr/6.2.1/solr-6.2.1.tgz -P /data/
 RUN cd /data && tar xzfv /data/solr-6.2.1.tgz
