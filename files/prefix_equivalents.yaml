@@ -1,0 +1,25 @@
+'HP': 
+  - 'HPO'
+'OMIM':
+  - 'MIM'
+'Oprhanet':
+  - 'Orpha'
+  - 'ORDO'
+'NCBIGene':
+  - 'NCBI-Gene'
+  - 'NCBI.Gene'
+  - 'Entrez'
+  - 'Entrez.Gene'
+  - 'EntrezGene'
+  - 'Entrez-Gene'
+  - 'Gene'
+'PMID':
+  - 'PubMed'
+'WormBase':
+  - 'WB'
+'FlyBase':
+  - 'FB'
+'Reactome':
+  - 'REACT'
+'Ensembl':
+  - 'ENSEMBL'
