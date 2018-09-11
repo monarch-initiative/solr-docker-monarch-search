@@ -34,7 +34,7 @@ RUN apt-get -y update && apt-get install -y git
 WORKDIR /data
 ADD files/functions.inc /data/
 ADD files/run.sh /data/
-ADD files/prefix_equivalents.yaml
+ADD files/prefix_equivalents.yaml /data/
 
 # Define commonly used JAVA_HOME variable
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
