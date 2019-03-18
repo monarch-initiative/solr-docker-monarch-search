@@ -13,6 +13,7 @@ cd /data/ && tar xzfv scigraph.tgz
 cd /data/golr-loader && mvn exec:java -Dexec.mainClass="org.monarch.golr.SimpleLoaderMain" -Dexec.args="-g /data/graph.yaml -m /data/prefix_equivalents.yaml -o output.json"
 /data/solr-6.2.1/bin/solr start
 /data/solr-6.2.1/bin/post -c search /data/golr-loader/output.json
+curl http://localhost:8983/solr/search/update?optimize=true
 /data/solr-6.2.1/bin/solr stop
 cd /data/solr-6.2.1/server/solr && tar cfv search.tar search/
 cp /data/solr-6.2.1/server/solr/search.tar /solr
