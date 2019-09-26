@@ -16,7 +16,7 @@ ADD files/prefix_equivalents.yaml /data/
 RUN git clone https://github.com/SciGraph/SciGraph.git /data/scigraph
 RUN git clone https://github.com/SciGraph/golr-loader.git /data/golr-loader
 RUN git clone https://github.com/monarch-initiative/monarch-app.git /data/monarch-app
-RUN git clone https://github.com/monarch-initiative/golr-schema /data/golr-schema
+RUN git clone -b classic-tokenizer https://github.com/monarch-initiative/golr-schema /data/golr-schema
 
 RUN cd /data/scigraph && mvn install -DskipTests -DskipITs
 RUN cd /data/golr-loader && mvn install -Dmaven.test.skip
