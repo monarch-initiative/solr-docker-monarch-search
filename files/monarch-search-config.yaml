@@ -96,6 +96,14 @@ fields:
     cardinality: single
     property: []
     searchable: false
+  
+  - id: has_phenotype
+    description: "Connected to phenotypes"
+    display_name: has_phenotype
+    type: boolean
+    cardinality: single
+    property: []
+    searchable: false
     
   - id: prefix
     description: "Curie prefix"
