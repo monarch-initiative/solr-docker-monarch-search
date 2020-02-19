@@ -16,7 +16,7 @@ ADD files/prefix_equivalents.yaml /data/
 ADD files/monarch-search-config.yaml /data/
 
 RUN git clone https://github.com/SciGraph/SciGraph.git /data/scigraph
-RUN git clone https://github.com/SciGraph/golr-loader.git /data/golr-loader
+RUN git clone -b add_pheno_bool https://github.com/SciGraph/golr-loader.git /data/golr-loader
 RUN git clone https://github.com/monarch-initiative/golr-schema /data/golr-schema
 
 RUN cd /data/scigraph && mvn install -DskipTests -DskipITs
