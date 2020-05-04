@@ -2,9 +2,9 @@
   - 'HPO'
 'OMIM':
   - 'MIM'
-'Orphanet':
-  - 'Orpha'
+'ORPHA':
   - 'ORDO'
+  - 'Orphanet'
 'NCBIGene':
   - 'NCBI-Gene'
   - 'NCBI.Gene'
