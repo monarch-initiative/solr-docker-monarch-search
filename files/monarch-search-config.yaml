@@ -40,6 +40,14 @@ fields:
     cardinality: multi
     property: []
     searchable: true
+    
+  - id: abbreviation
+    description: "The abbreviations."
+    display_name: abbreviation
+    type: string
+    cardinality: multi
+    property: []
+    searchable: true
 
   - id: definition
     description: "The definitions."
